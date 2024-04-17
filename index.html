@@ -8,6 +8,19 @@
     <title>Tip Calculator</title>
   </head>
   <body>
-    <h1>Tip Calculator</h1>
+    <div class="calculate">
+      <h1>Tip Calculator</h1>
+      <form>
+        <label>Bill Amount ($)</label>
+        <input type="number" id="bill-amount" required />
+        <label>Tip Percentage (%)</label>
+        <input type="number" id="tip-percentage" required />
+        <button type="button" onclick="calculateTip()">Calculate</button>
+      </form>
+      <div class="results">
+        <p>Tip Amount: <span id="tip-amount">0</span></p>
+        <p>Total Amount: <span id="total-amount">0</span></p>
+      </div>
+    </div>
   </body>
 </html>
